@@ -232,6 +232,15 @@ def adjust_timestamp_to_location(timestamp_str, location):
 
 # Extract time information from text
 def extract_time_from_text(text):
+    """
+    Extract time information from text using regex patterns.
+    
+    Args:
+        text: A string that might contain date and time information
+        
+    Returns:
+        str: Extracted time string or empty string if none found
+    """
     if not text:
         return ""
     
